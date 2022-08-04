@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+    /* Background gradient: */
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    /* ext */
+    --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+    /* Dividers */
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(var(--softViolet), var(--softBlue));
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    min-height: 100vh;
+}
+.main_container {
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 9px 16px 36px -2px rgba(0,0,0,0.33);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 510px;
+    justify-content: center;
+    margin: 8.125rem auto;
+    width: 920px;
+}
+.image_container {
+    background-image: url(../src/img/bg-pattern-desktop.svg);
+    background-position-x: -578px;
+    background-position-y: -295px;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    width: 50%;
+}
+.image {
+    overflow: hidden;
+}
+.image_container img:nth-child(1) {
+    display: block;
+    margin: 70px 85px 0 -85px;
+}
+.image_container img:nth-child(2) {
+    display: block;
+    margin: -225px 0 0 -95px;
+}
+.question_container {
+    align-self: flex-start;
+    height: 100%;
+    padding: 66px 90px 80px 15px;
+    width: 50%;
+}
+h1 {
+    color: var(--veryDarkDesaturatedBlue);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+p {
+    align-items: center;
+    color: var(--veryDarkGrayishBlue);
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+.icon_arrow {
+    height: 7px;
+    margin-right: 15px;
+    width: 10px;
+}
+.toggle {
+    display: none;
+    color: var(--darkGrayishBlue);
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+hr {
+    margin: 15px 0;
+    opacity: 0.5;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
