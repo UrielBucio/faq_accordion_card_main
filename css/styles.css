@@ -58,6 +58,7 @@ body {
     align-self: flex-start;
     height: 100%;
     padding: 66px 90px 80px 15px;
+    overflow-y: scroll;
     width: 50%;
 }
 h1 {
