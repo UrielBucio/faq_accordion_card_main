@@ -89,14 +89,14 @@ h1 {
 .arrow {
     transform: rotate(180deg);
 }
-.show {
-    display: block;
-}
 .toggle{
     color: var(--darkGrayishBlue);
     display: none;
     font-size: 0.8rem;
     margin-top: 15px;
+}
+.show {
+    display: block;
 }
 hr {
     margin: 15px 0;
