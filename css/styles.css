@@ -89,14 +89,12 @@ h1 {
 .arrow {
     transform: rotate(180deg);
 }
-.toggle {
-    display: none;
-}
 .show {
     display: block;
 }
 .toggle{
     color: var(--darkGrayishBlue);
+    display: none;
     font-size: 0.8rem;
     margin-top: 15px;
 }
@@ -144,7 +142,7 @@ hr {
         text-align: center;
         width: 100%;
     }
-    .toggle p {
+    .toggle {
         text-align: start;
     }
 }
